@@ -33,6 +33,6 @@ set_target_properties(ffmpeg-single
                     )
 
 #头文件
-include_directories(${LIBRARY_DIR}/libs/${ANDROID_ABI}/include src/main/cpp)
+include_directories(src/main/cpp/include src/main/cpp)
 
 target_link_libraries(ffmpeg-cmd ffmpeg-single ${log-lib})
