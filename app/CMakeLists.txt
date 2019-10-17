@@ -7,7 +7,6 @@ add_library( # Sets the name of the library.
         SHARED
 
         # Provides a relative path to your source file(s).
-        src/main/cpp/ffmpeg/ffmpeg_cmd.c
         src/main/cpp/ffmpeg/cmdutils.c
         src/main/cpp/ffmpeg/ffmpeg_filter.c
         src/main/cpp/ffmpeg/ffmpeg_opt.c
