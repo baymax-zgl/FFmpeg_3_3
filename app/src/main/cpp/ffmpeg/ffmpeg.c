@@ -23,7 +23,7 @@
  * multimedia converter based on the FFmpeg libraries
  */
 
-#include <android_log.h>
+#include <ffmpeg/android_log.h>
 #include "config.h"
 #include <ctype.h>
 #include <string.h>
@@ -4746,7 +4746,7 @@ static void log_callback_null(void *ptr, int level, const char *fmt, va_list vl)
     }
 }
 
-int exec(int argc, char **argv)
+int cmd_exec(int argc, char **argv)
 {
     av_log_set_callback(log_callback_null);
     int i, ret;

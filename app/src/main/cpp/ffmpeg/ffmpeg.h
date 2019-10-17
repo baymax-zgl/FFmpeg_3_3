@@ -659,4 +659,6 @@ int vaapi_decode_init(AVCodecContext *avctx);
 int vaapi_device_init(const char *device);
 int cuvid_init(AVCodecContext *s);
 
+int cmd_exec(int argc, char **argv);
+
 #endif /* FFMPEG_H */
